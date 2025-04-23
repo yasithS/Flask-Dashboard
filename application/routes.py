@@ -3,7 +3,7 @@ from flask import render_template
 
 @app.route("/")
 def indeex():
-    return render_template("index.html")
+    return render_template("index.html", title="Home Page")
 
 @app.route("/base")
 def layout():
