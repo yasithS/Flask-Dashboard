@@ -1,0 +1,21 @@
+type,category,date,amount
+income,Other Income,2025-04-03,499.71
+income,Gifts,2025-04-21,2209.96
+expense,Shopping,2025-04-18,703.87
+income,Salary,2025-04-14,280.34
+income,Refunds,2025-03-27,345.07
+expense,Rent,2025-04-03,463.49
+income,Investments,2025-04-08,1553.31
+expense,Subscriptions,2025-04-02,294.66
+income,Bonus,2025-03-29,532.34
+expense,Subscriptions,2025-04-07,544.78
+expense,Utilities,2025-04-07,356.88
+income,Refunds,2025-04-11,1766.78
+income,Other Income,2025-04-17,984.04
+income,Bonus,2025-04-10,966.1
+expense,Rent,2025-03-30,953.3
+income,Freelance,2025-04-17,2947.26
+expense,Healthcare,2025-04-07,275.47
+expense,Shopping,2025-04-05,887.27
+income,Bonus,2025-04-17,294.54
+income,Investments,2025-04-16,2128.83
