@@ -16,14 +16,14 @@
             <div class="col-md-12 p-0">
                 <header class="mb-4">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="">Expense Tracker</a>
+                        <a class="navbar-brand" href="{{url_for('index')}}">Expense Tracker</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav ml-auto mr-3">
-                                <a class="nav-item nav-link" href="">Add</a>
+                                <a class="nav-item nav-link" href="{{url_for('add_expenses')}}">Add</a>
                                 <a class="nav-item nav-link" href="">Dashboard</a>
                             </div>
                         </div>
@@ -33,6 +33,16 @@
         
             <div class="row justify-content-center">
                 <div class="col-md-10">
+                    {% with messages = get_flashed_messages(with_categories = True) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}
                     {% block content %}
                         This is layout.html
                     {% endblock %} 
