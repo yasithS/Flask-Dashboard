@@ -32,3 +32,7 @@ def delete(entry_id):
     flash("Entry deleted successfully!", "success")
     return redirect(url_for("index"))
 
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html", title="Dashboard")
+
